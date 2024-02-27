@@ -3,4 +3,12 @@ import { fileURLToPath } from 'url';
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
+  modules: [
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
+      },
+    ],
+  ],
 });
