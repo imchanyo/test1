@@ -4,9 +4,14 @@ const counter = useState('counter', () => Math.round(Math.random() * 1000));
 
 <template>
   <div>
-    Counter: {{ counter }}
-    <button @click="counter++">+</button>
-    <button @click="counter--">-</button>
-    <NuxtLink to="/user">test</NuxtLink>
+    <NuxtLink to="/products">VueUse Pratice</NuxtLink>
+    <NuxtLink to="/pinia">pinia Pratice</NuxtLink>
   </div>
 </template>
+
+<style lang="scss" scoped>
+div {
+  display: flex;
+  gap: 20px;
+}
+</style>
