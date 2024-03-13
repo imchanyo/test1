@@ -107,7 +107,7 @@ const onDetect = async (detectedCodes) => {
 // };
 </script>
 <template>
-  <div>
+  <div class="test">
     <p>
       Detected codes are visually highlighted in real-time. Use the following
       dropdown to change the flavor:
@@ -150,15 +150,17 @@ const onDetect = async (detectedCodes) => {
 </template>
 
 <style scoped>
+.test {
+  display: flex;
+  flex-wrap: wrap;
+}
 .scan-confirmation {
   position: absolute;
   width: 100%;
   height: 100%;
 
   background-color: rgba(255, 255, 255, 0.8);
-
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
 }
 </style>
