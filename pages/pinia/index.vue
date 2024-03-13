@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { type UserInterface } from '@/models/ProductInterface';
-import { useMyCartpiniaStore } from '@/store/cartpinia';
+import { type UserInterface } from "@/models/ProductInterface";
+import { useMyCartpiniaStore } from "@/store/cartpinia";
 
 const { data } = await useFetch<UserInterface[]>(
-  'https://jsonplaceholder.typicode.com/users'
+  "https://jsonplaceholder.typicode.com/users"
 );
 
 const store = useMyCartpiniaStore();
@@ -16,7 +16,7 @@ const store = useMyCartpiniaStore();
       <div v-for="(product, i) in data" :key="product.id">
         <ProductItem :product="product" :key="i" :id="product.id">
           <template #footer="{ prd }">
-            <button @click="() => store.addCart(prd)">담기</button>
+            <button @click="() => store.addCart(prd)">담기22222</button>
           </template>
         </ProductItem>
       </div>
