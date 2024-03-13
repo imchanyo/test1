@@ -108,6 +108,21 @@ const onDetect = async (detectedCodes) => {
 </script>
 <template>
   <div>
+    <p>
+      Detected codes are visually highlighted in real-time. Use the following
+      dropdown to change the flavor:
+
+      <select v-model="trackFunctionSelected">
+        <option
+          v-for="option in trackFunctionOptions"
+          :key="option.text"
+          :value="option"
+        >
+          {{ option.text }}
+        </option>
+      </select>
+    </p>
+
     <p class="decode-result">
       Last result: <b>{{ data.result }}</b>
     </p>
