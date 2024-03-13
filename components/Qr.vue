@@ -64,7 +64,11 @@ const timeout = (ms) => {
       @error="onError"
     >
       <div v-show="data.showScanConfirmation" class="scan-confirmation">
-        <img src="/checkmark.svg" alt="Checkmark" width="128" />
+        <img
+          src="https://cdn.pixabay.com/photo/2014/04/02/10/19/check-303494_1280.png"
+          alt="Checkmark"
+          width="128"
+        />
       </div>
     </QrcodeStream>
   </div>
