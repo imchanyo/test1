@@ -49,6 +49,9 @@ const timeout = (ms) => {
 </script>
 <template>
   <div>
+    <p class="decode-result">
+      Last result: <b>{{ data.result }}</b>
+    </p>
     <div v-if="active"></div>
 
     <QrcodeStream
