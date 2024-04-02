@@ -53,9 +53,7 @@ onMounted(() => {
     <div class="title">
       <span> {{ props.word }}</span>
     </div>
-    <div class="subTitle">
-      {{ props.subTitle }}
-    </div>
+    <div class="subTitle">{{ props.subTitle }}22</div>
 
     <div class="desc">
       {{ props.desc }}
@@ -74,7 +72,8 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   white-space: pre-line;
-  height: calc(var(--vh, 1vh) * 100 - 4.8rem);
+  //   height: calc(var(--vh, 1vh) * 100 - 4.8rem);
+  height: calc(100vh - 4.8rem);
 
   .image {
     img {
