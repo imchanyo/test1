@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
   gap: 1.6rem;
   height: 4.8rem;
-  background-color: black;
+  background-color: green;
 }
 h1 {
   flex: 1 1 auto;
