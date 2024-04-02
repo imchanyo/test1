@@ -72,9 +72,13 @@ const getSrc = (path) => {
   align-items: center;
   justify-content: center;
   white-space: pre-line;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: calc(100vh - 4.8rem);
+
   //   height: calc(100vh - 4.8rem);
+  /* iOS only */
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
 
   .image {
     img {
