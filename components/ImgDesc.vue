@@ -23,12 +23,12 @@ const imgInfo = {
   free: "/frame",
   passport: "/passport",
 };
-// const setScreenSize = () => {
-//   const vh = window.innerHeight * 0.01;
+const setScreenSize = () => {
+  const vh = window.innerHeight * 0.01;
 
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-//   console.log(22, vh);
-// };
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  console.log(22, vh);
+};
 
 const getSrc = (path) => {
   return {
@@ -36,9 +36,9 @@ const getSrc = (path) => {
     srcset: `${path}-2x.webp 2x, ${path}-3x.webp 3x `,
   };
 };
-// onMounted(() => {
-//   setScreenSize();
-// });
+onMounted(() => {
+  setScreenSize();
+});
 </script>
 
 <template>
@@ -53,10 +53,10 @@ const getSrc = (path) => {
     <div class="title">
       <span> {{ props.word }}</span>
     </div>
-    <div class="subTitle">{{ props.subTitle }}22</div>
+    <div class="subTitle">{{ props.subTitle }}33</div>
 
     <div class="desc">
-      {{ props.desc }}fsdfsf
+      {{ props.desc }}
 
       <slot name="desc" />
     </div>
@@ -72,13 +72,8 @@ const getSrc = (path) => {
   align-items: center;
   justify-content: center;
   white-space: pre-line;
-  height: calc(100vh - 4.8rem);
-
+  height: calc(var(--vh, 1vh) * 100 - 4.8rem);
   //   height: calc(100vh - 4.8rem);
-  /* iOS only */
-  @supports (-webkit-touch-callout: none) {
-    height: -webkit-fill-available;
-  }
 
   .image {
     img {
