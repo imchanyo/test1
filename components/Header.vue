@@ -6,7 +6,7 @@
 
 <template>
   <header>
-    <div class="left">Left</div>
+    <div class="left">gsgsdgsd</div>
 
     <h1>iasds-fe-fo</h1>
 
