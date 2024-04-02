@@ -56,7 +56,7 @@ const getSrc = (path) => {
     <div class="subTitle">{{ props.subTitle }}22</div>
 
     <div class="desc">
-      {{ props.desc }}
+      {{ props.desc }}fsdfsf
 
       <slot name="desc" />
     </div>
