@@ -23,12 +23,12 @@ const imgInfo = {
   free: "/frame",
   passport: "/passport",
 };
-const setScreenSize = () => {
-  const vh = window.innerHeight * 0.01;
+// const setScreenSize = () => {
+//   const vh = window.innerHeight * 0.01;
 
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-  console.log(22, vh);
-};
+//   document.documentElement.style.setProperty("--vh", `${vh}px`);
+//   console.log(22, vh);
+// };
 
 const getSrc = (path) => {
   return {
@@ -37,7 +37,7 @@ const getSrc = (path) => {
   };
 };
 onMounted(() => {
-  setScreenSize();
+  //   setScreenSize();
 });
 </script>
 
